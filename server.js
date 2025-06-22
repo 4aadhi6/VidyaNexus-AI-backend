@@ -608,8 +608,8 @@ const createAdminOnStartup = async () => {
     const adminCount = await User.countDocuments({ role: "admin" });
     if (adminCount === 0) {
       console.log("No admin account found. Creating a default admin...");
-      const adminEmail = process.env.ADMIN_EMAIL || "admin@vidyanexus.com";
-      const adminPassword = process.env.ADMIN_PASSWORD || "password123";
+      const adminEmail = process.env.ADMIN_EMAIL || "adithyanr350@gmail.com";
+      const adminPassword = process.env.ADMIN_PASSWORD || "12345678";
       const adminName = "Default Admin";
 
       await User.create({
